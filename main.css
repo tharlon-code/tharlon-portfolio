@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"poppins",sans-serif;
+    text-decoration: none;
+list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background-color: rgba(73, 72, 72, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+    0 0 50px orangered;
+transform: scale(1.1);
+}
+.span{
+    color: orangered;
+}
+.logo span,
+.Inicio-content h2 span,
+.Sobre-content h2 span,
+.Sobre-content h3 span,
+.Heading span,
+.Contact-form h2 span{
+    color: orangered;
+}
+.navbar a{
+    font-size: 18px;
+color: white;
+font-weight: 500;
+margin: 0 20px;
+border-bottom: 3px solid transparent;
+transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+.Contacte-me{
+    padding: 10px 28px;
+background-color: white;
+color: black;
+border: 2px solid transparent;
+border-radius: 8px;
+font-size: 16px;
+letter-spacing: 1px;
+font-weight: 600;
+transition: 0.3s ease;
+}
+.Contacte-me:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+.Inicio{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+display: flex;
+align-items: center;
+gap: 7em;
+padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.Inicio-content h3{
+    font-size: 42px;
+}
+.Inicio-content h2{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.Inicio-content p{
+font-size: 18px;
+margin: 25px 0 30px;
+max-width: 40em;
+line-height: 1.7;
+}
+.btn-box{
+    width: 345px;
+display: flex;
+gap: 2em;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.btn-1:hover{
+background-color: white;
+color: black;
+border: 2px solid black;
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: orangered;
+color: white;
+border: 2px solid orangered;
+border-radius: 8px;
+font-size: 18px;
+letter-spacing: 1px;
+font-weight: 600;
+transition: 0.3s ease;
+cursor:pointer;
+display: inline-block;
+}
+.btn-2:hover{
+    background-color: white;
+    color: orangered;
+}
+.foto1{
+border-radius: 50%;
+width: 650px;
+max-width: 100%;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+object-position: center;
+box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+.Sobre{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 12% 8%;
+gap: 10em;
+background: black;
+}
+.Sobre-img img{
+    position: relative;
+    width: 350px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 5px orangered,
+                0 0 25px orangered;
+border-radius: 50%;
+}
+.Sobre-content h2{
+    text-align: left;
+ color: white;
+ font-size: 42px;
+}
+.Sobre-content h3{
+font-size: 62px;
+color: white;
+}
+.Sobre-content p{
+color: white;
+font-size: 20px;
+margin: 2em 0 3em;
+line-height: 1.7;
+}
+
+/*meus dados pessoais*/
+.dados{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em 3em;
+    margin-bottom: 3em;
+}
+.dados p{
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+.dados p span{
+    color: orangered;
+    font-weight: 600;
+    margin-right: .5em;
+}
+
+/*Titulo*/
+.Heading{
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+/*Serviços*/
+.Servicos{
+    padding: 8% 12%;
+    background: rgb(241, 241, 241);
+
+}
+.servicos-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    
+}
+.servico{
+    flex: 1 1 20em;
+    max-width: 24em;
+    background: white;
+    padding: 2.5em 2em;
+    border-radius: .8rem;
+    border-bottom: 4px solid transparent;
+    transition: 0.3s ease;
+       border-style: solid;
+border-radius: 5px;
+border-color: black;
+border-width: 2px;
+}
+.servico:hover{
+    border-bottom: 4px solid orangered;
+    box-shadow: 0 0 25px orangered;
+}
+.servico h3{
+    font-size: 24px;
+    margin-bottom: .6em;
+}
+.servico p{
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Experiencia*/
+.Experiencia{
+    padding: 8% 12%;
+    background: black;
+}
+.Experiencia .Heading{
+    color: white;
+}
+.timeline{
+    max-width: 55em;
+    margin: 0 auto;
+    border-left: 3px solid orangered;
+    padding-left: 2.5em;
+}
+.timeline:hover{
+padding: 10px;
+    border: 2px solid orangered;
+    border-radius: 2%;
+    
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 3em;
+}
+.timeline-item::before{
+    content: "";
+    position: absolute;
+    left: -3.15em;
+    top: .4em;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: orangered;
+}
+.timeline-item .data{
+    color: orangered;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.timeline-item h3{
+    color: white;
+    font-size: 24px;
+    margin: .3em 0 .5em;
+}
+.timeline-item p{
+    color: rgb(214, 214, 214);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/*Projectos*/
+.Projectos{
+    padding: 8% 12%;
+    background: rgb(241, 241, 241);
+}
+.projectos-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+.projecto{
+    flex: 1 1 20em;
+    max-width: 24em;
+    background: whitesmoke;
+    padding: 2.5em 2em;
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+}
+.projecto:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px orangered;
+}
+.projecto h3{
+    font-size: 24px;
+    margin-bottom: .6em;
+}
+.projecto p{
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 2em;
+    flex: 1;
+}
+.projecto .btn-2{
+    align-self: flex-start;
+    font-size: 16px;
+    padding: 12px 24px;
+}
+
+/*Educaçao e competencias */
+.Educacao{
+    padding: 8% 12%;
+    background: black;
+    
+}
+.Educacao .Heading{
+    color: white;
+}
+.educacao-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 6em;
+   
+}
+.formacao{
+    flex: 1 1 20em;
+    max-width: 24em;
+    padding: 2.5em 2em;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: .8rem;
+    transition: 0.3s ease;
+}
+.formacao:hover{
+    border-color: orangered;
+    box-shadow: 0 0 25px rgba(255, 69, 0, 0.35);
+}
+.formacao .data{
+    color: orangered;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.formacao h3{
+    color: white;
+    font-size: 22px;
+    margin: .4em 0 .5em;
+}
+.formacao p{
+    color: rgb(214, 214, 214);
+    font-size: 17px;
+    line-height: 1.7;
+}
+.skills-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    max-width: 55em;
+    margin: 0 auto;
+}
+.skill{
+    color: white;
+    border: 2px solid orangered;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.skill:hover{
+    background-color: orangered;
+}
+
+/* ===== Redes sociais no inicio ===== */
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-top: 2.5em;
+}
+.redes a{
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+.redes a:hover{
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+
+.Contact-form h2{
+    text-align: center;
+margin-top: 3em;
+margin-bottom: 1em;
+font-size: 36px;
+}
+.Contact-form h2.Contacte-me{
+    background-color: transparent;
+    color: black;
+    padding: 0;
+    border: none;
+    letter-spacing: normal;
+}
+.Contact-form h2.Contacte-me:hover{
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+}
+.contacto-texto{
+    max-width: 40em;
+    margin: -2em auto 3em;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 0 1em;
+}
+.Contact-form form{
+    max-width: 50em;
+    text-align: center;
+    margin-bottom: 3em;
+margin: 0 auto 3em;
+padding: 0 1em;
+}
+.Contact-form form .input-box{
+    display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 0 1.5em;
+}
+.Contact-form form .input-box input,
+.Contact-form form textarea{
+    width: 100%;
+padding: 1.5em;
+font-size: 18px;
+color: black;
+background: rgb(241, 241, 241);
+border-radius: .8rem;
+margin: 1rem 0;
+resize: none;
+border: 2px solid transparent;
+transition: 0.3s ease;
+}
+.Contact-form form .input-box input{
+    flex: 1 1 18em;
+    width: auto;
+}
+.Contact-form form .input-box input:focus,
+.Contact-form form textarea:focus{
+    outline: none;
+    border: 2px solid orangered;
+}
+.Contact-form form input[type="submit"]{
+    width: auto;
+    background-color: black;
+    color: white;
+}
+
+/*Rodape*/
+.rodape{
+    background: black;
+    padding: 2.5em 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.rodape p{
+    color: white;
+    font-size: 16px;
+}
+.rodape a{
+    color: orangered;
+    font-weight: 600;
+    font-size: 16px;
+}
+.rodape a:hover{
+    text-decoration: underline;
+}
+
+/*Ecras pequenos*/
+@media (max-width: 1100px){
+    .header{
+        padding: 20px 6%;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    .navbar a{
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    .Inicio{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 3em;
+        padding: 10em 6% 4em;
+    }
+    .Inicio-content h2{
+        font-size: 40px;
+    }
+    .Inicio-content h3{
+        font-size: 30px;
+    }
+    .Inicio-content p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn-box,
+    .redes{
+        justify-content: center;
+        width: auto;
+    }
+    .foto1{
+        width: 70vw;
+        max-width: 320px;
+    }
+    .Sobre{
+        flex-direction: column;
+        gap: 3em;
+        padding: 4em 6%;
+        text-align: center;
+    }
+    .Sobre-content h2,
+    .dados{
+        text-align: center;
+        justify-content: center;
+    }
+    .Sobre-content h3{
+        font-size: 30px;
+    }
+    .Servicos,
+    .Experiencia,
+    .Projectos,
+    .Educacao{
+        padding: 4em 6%;
+    }
+    .Heading{
+        font-size: 32px;
+    }
+    .rodape{
+        justify-content: center;
+        text-align: center;
+        padding: 2em 6%;
+    }
+}
